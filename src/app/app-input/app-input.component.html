@@ -1,0 +1,10 @@
+<div class="input-group input-group-lg">
+    <input type="text" class="form-control" placeholder="Ej: 8, café, if"
+        aria-label="Username" aria-describedby="basic-addon" [(ngModel)]="valor" (keyup)="onKey($event)">
+    <button class="input-group-addon" (click)="clear()">Limpiar</button>
+</div>
+<br>
+<p *ngIf="tipo != 'Esperando...'" class="lead">
+    La cadena de caracteres ingresada es: 
+</p>
+<h1>{{tipo}}</h1>
